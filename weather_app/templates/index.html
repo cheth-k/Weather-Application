@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button onclick="getWeather()">
+                <i class="fas fa-search"></i>
+            </button>
+        </div>
+
+        <div class="weather-box" id="weatherBox" style="display: none;">
+            <div class="location">
+                <h2 id="cityName">Loading...</h2>
+                <p id="date"></p>
+            </div>
+
+            <div class="weather-info">
+                <div class="temperature">
+                    <i class="fas fa-temperature-high"></i>
+                    <h1 id="temperature">--°C</h1>
+                    <p id="description">--</p>
+                </div>
+
+                <div class="details">
+                    <div class="detail-item">
+                        <i class="fas fa-water"></i>
+                        <div class="detail-info">
+                            <p class="label">Humidity</p>
+                            <p id="humidity" class="value">--%</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <div class="detail-info">
+                            <p class="label">Wind Speed</p>
+                            <p id="windSpeed" class="value">-- m/s</p>
+                        </div>
+                    </div>
+
+                    <div class="detail-item">
+                        <i class="fas fa-compress-alt"></i>
+                        <div class="detail-info">
+                            <p class="label">Pressure</p>
+                            <p id="pressure" class="value">-- hPa</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
