@@ -109,22 +109,6 @@ http://localhost:5000
   - Basic weather metrics
   - No credit card required
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch:
-```bash
-git checkout -b feature/YourFeature
-```
-3. Commit your changes:
-```bash
-git commit -m 'Add some feature'
-```
-4. Push to the branch:
-```bash
-git push origin feature/YourFeature
-```
-5. Submit a pull request
 
 ## Error Handling
 
@@ -139,26 +123,3 @@ The application includes error handling for:
 - Never commit your API key to public repositories
 - Consider using environment variables for API key in production
 - Keep your API key private and secure
-
-## Future Improvements
-
-- [ ] Add 5-day weather forecast
-- [ ] Implement temperature unit conversion
-- [ ] Add weather maps
-- [ ] Include more weather metrics
-- [ ] Add user location detection
-- [ ] Implement weather alerts
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details
-
-## Acknowledgments
-
-- OpenWeatherMap for providing the weather data API
-- Font Awesome for the icons
-- Flask community for the excellent documentation
-
-## Contact
-
-If you have any questions or suggestions, please open an issue or contact [your-email@example.com]
